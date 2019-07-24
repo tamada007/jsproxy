@@ -31,12 +31,6 @@ jsproxy_config({
         [location.host]: 1,
       }
     },
-    'mysite2': {
-      label: '当前站点2',
-      lines: {
-        'tome.tamada007.workers.dev': 1,
-      }
-    },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: 'cfworker',
@@ -59,8 +53,8 @@ jsproxy_config({
   /**
    * 默认节点
    */
-//   node_default: 'mysite',
-    node_default: 'mysite2',
+  node_default: 'mysite',
+//     node_default: 'mysite2',
 //   node_default: /jsproxy\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
