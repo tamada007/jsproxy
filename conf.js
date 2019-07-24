@@ -28,7 +28,8 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        [location.host]: 1,
+        //[location.host]: 1,
+        'lively-silence-e817.tamada007.workers.dev': 8,
       }
     },
     // 该节点用于加载大体积的静态资源
