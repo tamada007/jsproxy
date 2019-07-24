@@ -28,8 +28,7 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        //[location.host]: 1,
-        'lively-silence-e817.tamada007.workers.dev': 8,
+        [location.host]: 1,
       }
     },
     // 该节点用于加载大体积的静态资源
@@ -54,8 +53,8 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  // node_default: 'mysite',
-  node_default: /jsproxy\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
+  node_default: 'mysite',
+//   node_default: /jsproxy\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
    * 加速节点
