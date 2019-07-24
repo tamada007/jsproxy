@@ -1,6 +1,6 @@
 jsproxy_config({
   // 当前配置的版本（记录在日志中，用于排查问题）
-  ver: '80',
+  ver: '81',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -31,12 +31,12 @@ jsproxy_config({
         [location.host]: 1,
       }
     },
-    'mysite3': {
-      label: '当前站点3',
-      lines: {
-        'tome.tamada007.workers.dev': 7,
-      }
-    },
+//     'mysite3': {
+//       label: '当前站点3',
+//       lines: {
+//         'tome.tamada007.workers.dev': 7,
+//       }
+//     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: 'cfworker',
