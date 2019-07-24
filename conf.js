@@ -1,6 +1,6 @@
 jsproxy_config({
   // 当前配置的版本（记录在日志中，用于排查问题）
-  ver: '78',
+  ver: '79',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -34,7 +34,7 @@ jsproxy_config({
     'mysite3': {
       label: '当前站点3',
       lines: {
-        [location.host]: 1,
+        'tome.tamada007.workers.dev': 7,
       }
     },
     // 该节点用于加载大体积的静态资源
@@ -44,10 +44,10 @@ jsproxy_config({
       lines: {
         // 收费版（高权重）
         'node-cfworker.etherdream.com': 6,
+//         'tome.tamada007.workers.dev': 7,
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        'tome.tamada007.workers.dev': 7,
         'a.007.workers.dev': 1,
         'a.hehe.workers.dev': 1,
         'a.lulu.workers.dev': 1,
