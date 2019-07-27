@@ -1,6 +1,6 @@
 jsproxy_config({
   // 当前配置的版本（记录在日志中，用于排查问题）
-  ver: '82',
+  ver: '83',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -59,9 +59,8 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'mysite',
-//     node_default: 'mysite2',
-//   node_default: /jsproxy\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
+//   node_default: 'mysite',
+  node_default: /jsproxy\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
    * 加速节点
